@@ -26,7 +26,8 @@ public class User {
 	
 	public void sayHello() {
 		System.out.println("Hello my name is" + name);
-		if(this.is21()) {
+		if(this.is21()) { // is21() is going to be equal to true or false
+			//is21() = true or is21() = false
 			System.out.println("I am older than 21.");
 		}else {
 			System.out.println("I am not 21 but that's okay, this is Europe.");
@@ -50,6 +51,8 @@ public class User {
 		System.out.println(eliza.is21());
 		eliza.is21();
 	}
+	
+	
 	
 
 }

@@ -51,5 +51,19 @@ public class Santa {
 	public String hoHoHo() {
 		return "HO HO HO....Merry Christmas to all and to all a good night!";
 	}
+	
+	public String deliverPresents(String list) {
+		//there is now a variable called list, that exists in this code
+		return list;
+		
+	}
+	
+	public static void main(String[] args) {
+		Santa santa = new Santa("Chris", 560, "North Pole");
+		System.out.println(santa.deliverPresents("pizza"));
+		//String list = "pizza";
+	}
+	
+
 
 }

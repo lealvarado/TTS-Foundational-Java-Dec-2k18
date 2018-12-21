@@ -1,6 +1,6 @@
 import anotherPackage.User;
 
-public class Animal {
+public class Animal extends User {
 	//instance variables
 		// varaiables that live within your class but outside a method 
 	//constructorss
@@ -9,25 +9,30 @@ public class Animal {
 		//live within methods
 	//methods
 		//behaviors of a class
-	String name; 
-	int age; 
-	String breed;
+//	String name; 
+//	int age; 
+//	String breed;
 	
-	public Animal() {
-		
-	}
+
+//	public void Animal() {
+//		
+//	}
+//	
+//	public void Animal(String name) {
+//		this.name = name;
+//	}
+//	
+//	public void User(String name, int age, String breed) {
+//		this.name = name; 
+//		this.age = age;
+//		this.breed = breed;
+////		name = inputName; 
+////		age = inputAge;
+////		breed = inputBreed;
+//	}
 	
-	public Animal(String name) {
-		this.name = name;
-	}
-	
-	public Animal(String name, int age, String breed) {
-		this.name = name; 
-		this.age = age;
-		this.breed = breed;
-//		name = inputName; 
-//		age = inputAge;
-//		breed = inputBreed;
+	public String sound() {
+		return "Roar"; 
 	}
 
 	public static void main(String[] args) {
@@ -37,6 +42,7 @@ public class Animal {
 		User user1 = new User("Leslie", 3);
 		System.out.println(user1.name);
 		user1.name = "not Leslie";
+		user1.sayHello();
 		//System.out.println(user1.getName());
 
 	}
